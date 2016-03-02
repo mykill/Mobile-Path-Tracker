@@ -1,0 +1,12 @@
+<ion-view title="Recording" ng-controller="CompassReadingsController">
+    <ion-content padding="true" class="has-header has-footer">
+        <div class="button-bar"></div>
+        <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
+			<img src = "images/kwm-loading.gif" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"	ng-show="showLoadingIcon" class="ng-hide">
+            <!--<i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>-->
+        </div>
+        <a href="#" class="button button-stable button-block" ng-click="push()" ng-hide="hideStartBtn">Start Recording</a>
+        <a href="#/path" class="button button-stable button-block ng-hide" ng-click="stop()" ng-show="showStopBtn">Stop</a>
+        
+    </ion-content>
+</ion-view>

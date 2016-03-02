@@ -1,0 +1,15 @@
+<ion-view >
+  <ion-content ng-controller="myCont">
+  		<button class="button" ng-click="calculateData()">
+  		  click me
+  		</button>
+		<br>
+  	name : {{magneticHeading}} {{mydata}}
+		<ul>
+			<li ng-repeat="data in mydata">
+				<p>{{data.magneticHeading}}</p>
+			
+			</li>
+		</ul>
+  </ion-content>
+</ion-view>

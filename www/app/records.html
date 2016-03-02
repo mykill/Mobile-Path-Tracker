@@ -1,0 +1,10 @@
+<ion-view title="Records" ng-controller="RecordsController">
+    <ion-content padding="true" class="has-header">
+    <div class="list" ng-repeat="entry in database">
+          <a href="#/recordentry" class="item" ng-click="viewRecord(entry)">
+            {{entry.date | date:'medium'}}
+        </a>
+    </div>
+
+    </ion-content>
+</ion-view>
